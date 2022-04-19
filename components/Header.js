@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.primary,
   },
   title: {
-    color: (Platform.OS = 'ios' ? Colors.primary : 'white'),
+    color: Platform.OS === 'ios' ? Colors.primary : 'white',
   },
 });
 

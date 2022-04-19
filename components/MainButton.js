@@ -30,7 +30,7 @@ const MainButton = (props) => {
 const styles = StyleSheet.create({
   buttonContainer: {
     borderRadius: 25,
-    opacity: 'hidden',
+    overflow: 'hidden',
   },
   button: {
     borderRadius: 25,

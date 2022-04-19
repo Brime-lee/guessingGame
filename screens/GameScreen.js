@@ -4,12 +4,10 @@ import {
   Text,
   StyleSheet,
   Alert,
-  ScrollView,
   FlatList,
   Dimensions,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { ScreenOrientation } from 'expo';
 
 import NumberContainer from '../components/NumberContainer';
 import Card from '../components/Card';
@@ -50,7 +48,7 @@ const GameScreen = (props) => {
 
   const { userChoice, onGameOver } = props;
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const updateLayout = () => {
       setAvailableDeviceWidth(Dimensions.get('window').width);
       setAvailableDeviceHeight(Dimensions.get('window').height);
